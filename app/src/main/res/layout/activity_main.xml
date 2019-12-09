@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/gradient_background"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/MainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/etEmailAddress"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Enter Your Email Address"
+            android:textColor="#F6F3F3"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittextbackround"/>
+        <EditText
+            android:id="@+id/etPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Enter Your Password"
+            android:textColor="#F6F3F3"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittextbackround"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Log In"
+            android:textAlignment="center"
+            android:textColor="#CF0909"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Forgot your Password ? "
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/SecondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_below="@+id/MainLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Don't have an account yet ? "
+            android:textSize="16dp"
+            android:textColor="#494848"/>
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sign Up Here"
+            android:textSize="18dp"
+            android:textColor="#F7F3F3"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

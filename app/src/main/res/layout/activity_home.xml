@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".HomeActivity"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:padding="20dp" />
+            //Grid Layout
+
+            <LinearLayout
+                android:id="@+id/gridlayout"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_gravity="center"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="477dp"
+                    android:layout_weight="8"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:rowCount="3">
+
+                    <!--Row 1 -->
+
+                    <!-- Column 1-->
+
+                    <LinearLayout
+                        android:id="@+id/row1_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="130dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/diagnostic1" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text=" Car Diagnostics"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <!-- Row 1-->
+                        <!-- Column 2-->
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="130dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/service" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Service"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <!-- Row 2-->
+                    <!-- Column 1-->
+                    <LinearLayout
+                        android:id="@+id/row2_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="130dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/suspension" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Suspension"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <!-- Row 2-->
+                        <!-- Column 2-->
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="130dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/paint" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Paint Work"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <!-- Row 3-->
+                    <!-- Column 1-->
+                    <LinearLayout
+                        android:id="@+id/row3_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="130dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/auto" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text=" Auto Electric"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <!-- Row 3-->
+                        <!-- Column 2-->
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="130dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/bodywork" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Body Works"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

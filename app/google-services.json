@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "452544980421",
+    "firebase_url": "https://mechanicapp-3ec5c.firebaseio.com",
+    "project_id": "mechanicapp-3ec5c",
+    "storage_bucket": "mechanicapp-3ec5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452544980421:android:84e8158b66cb45b5",
+        "android_client_info": {
+          "package_name": "com.example.mechanicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452544980421-ufsbk6vuevooa20poiel4r8fp744f01p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mechanicapp",
+            "certificate_hash": "2df7da7ec4476cf2f391dea20267f47230fb85b7"
+          }
+        },
+        {
+          "client_id": "452544980421-4fju9qdb4jjb8qk7rsv36sc7pd0b76c3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0vj5BnAamRFv_UjBYaWX5uR8lHrOxxHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452544980421-4fju9qdb4jjb8qk7rsv36sc7pd0b76c3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

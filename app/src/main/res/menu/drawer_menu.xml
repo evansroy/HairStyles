@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_profile"
+        android:title="Profile"
+       android:icon="@drawable/ic_profile" />
+       <item android:id="@+id/nav_contacts"
+        android:title="Contacts"
+        android:icon="@drawable/ic_contacts" />
+       <item android:id="@+id/nav_invite_friends"
+        android:title="Invite Friends"
+        android:icon="@drawable/ic_invitefriend" />
+       <item android:id="@+id/nav_live_chat"
+        android:title="Live Chat"
+        android:icon="@drawable/ic_chat" />
+       <item android:id="@+id/nav_hire_tools"
+        android:title="Hire Tools"
+        android:icon="@drawable/ic_hiretool" />
+       <item android:id="@+id/nav_send_feedback"
+        android:title="Send Feedback"
+        android:icon="@drawable/ic_sendfeedback" />
+      <item android:id="@+id/nav_ask_for_Quote"
+        android:title="Ask for Quotation"
+        android:icon="@drawable/ic_quotation" />
+        <item android:id="@+id/nav_log_out"
+            android:title="Log Out"
+            android:icon="@drawable/ic_remove_circle_black_24dp" />
+    </group>
+</menu>
